@@ -1,0 +1,13 @@
+<div class="spiel-symbol text-center ng-hide">
+  <p>{{anredeSymbol}}</p>
+  <div class="form-group row">
+    <div class="col-xs-12 col-sm-4">
+        <label for="symbol">{{wahlSymbol}}</label>
+    </div>
+    <div class="col-xs-6 col-xs-offset-3 col-sm-8 col-sm-offset-0">
+      <select class="form-control" id="symbol">
+        <option ng-repeat="symbol in arraySymbol">{{symbol}}</option>
+      </select>
+    </div>
+  </div>
+</div>

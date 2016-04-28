@@ -1,0 +1,13 @@
+<div class="spiel-silbenanzahl text-center ng-hide">
+  <p>{{anredeSilbenanzahl}}</p>
+  <div class="form-group row">
+    <div class="col-xs-12 col-sm-4">
+        <label for="symbol">{{wahlSilbenanzahl}}</label>
+    </div>
+    <div class="col-xs-6 col-xs-offset-3 col-sm-8 col-sm-offset-0">
+      <select class="form-control" id="symbol">
+        <option ng-repeat="silbenanzahl in arraySilbenanzahl">{{silbenanzahl}}</option>
+      </select>
+    </div>
+  </div>
+</div>

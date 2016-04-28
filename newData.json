@@ -1,0 +1,71 @@
+{
+  "body": {
+
+    "header": {
+
+    },
+
+    "main": {
+
+      "home": {
+
+
+      },
+
+      "spiele": {
+        "spieltyp": {
+          "anrede": "Welches Spiel möchstest Du spielen?",
+          "wahl": "Wähle eins aus",
+          "array": [
+            "KZMF",
+            "EinsNeu",
+            "ImmerNeu"
+          ]
+        },
+
+        "spielsymbol": {
+          "anrede": "Mit welchen Symbolen willst Du spielen?",
+          "wahl": "Wähle eins aus",
+          "array": [
+            "Silben",
+            "Buchstaben",
+            "Zahlen",
+            "0 und 1"
+          ]
+        },
+
+        "silbenanzahl": {
+          "anrede": "Mit wie vielen Paaren willst Du spielen?",
+          "wahl": "Wähle Deine Anzahl:",
+          "array": [
+            "1", "2", "3", "4"
+          ],
+          "arrayKZMF": [
+            "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
+          ]
+        },
+
+        "rundenanzahl": {
+          "anrede": "Wie viele Runden möchtest Du spielen?",
+          "wahl": "Wähle Deine Rundenanzahl aus:",
+          "array": [
+            "4", "5", "6", "7", "8", "9", "10", "11", "12"
+          ]
+        }
+      },
+
+      "alphabet": {
+
+      },
+
+      "einmaleins": {
+
+      }
+    },
+
+    "footer": {
+
+    }
+
+  }
+}

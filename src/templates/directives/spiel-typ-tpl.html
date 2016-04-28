@@ -1,0 +1,14 @@
+<div class="spiel-typ text-center">
+  <p>{{anredeTyp}}</p>
+  <p>{{wahlTyp}}</p>
+  <ul>
+    <li ng-repeat="typ in arrayTyp" class="list-unstyled">
+      <a  href=""
+          type="button"
+          class="btn btn-default"
+          ng-click="setOptions($index +1)">
+          {{typ}}
+      </a>
+    </li>
+  </ul>
+</div>

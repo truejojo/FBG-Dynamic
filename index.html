@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fbg">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>FBG Test with Angular and Bootstrap</title>
+    <!-- Bootstrap -->
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/bootstrap.css.map" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="bg-success">
+      <h1 class="text-center">Family Brain Games</h1>
+      <nav class="navbar navbar-default">
+        <div class="bg-success">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="#/" class="navbar-brand">Fun with FBG</a>
+              <button type="button" class="navbar-toggle collapsed"
+                      data-toggle="collapse" data-target=".fbg-main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+    		    <div class="collapse navbar-collapse fbg-main-nav">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#/src/templates/pages/spiele">Spiele</a>
+                </li>
+                <li>
+                  <a href="#/src/templates/pages/alphabet">Alphabet</a>
+                </li>
+                <li>
+                  <a href="#/src/templates/pages/einmaleins">Einmal Eins</a>
+                </li>
+                <li>
+                  <a href="" data-target="#" data-toggle="dropdown">
+                    About <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#/src/templates/pages/info">Über die Spiele</a>
+                    </li>
+                    <li>
+                      <a href="#">Übers Alphabet</a>
+                    </li>
+                    <li>
+                      <a href="#">Übers Einmal Eins</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="#">Kontakt</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="#">Facebook</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+    		    </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <!-- <themen></themen>
+      <spiele></spiele>
+      <anmelden></anmelden> -->
+      <ng-view></ng-view>
+
+    </main>
+
+    <footer class="bg-success">
+     <div class="bg-success">
+       <div class="container">
+         <div class="row">
+           <div class="col-xs-4 col-sm-3">
+             <h4>Praxen</h4>
+             <ul class="list-unstyled">
+               <li role="presentation"><a href="http://www.funktionaloptometrie.com/">Augen</a></li>
+               <li role="presentation"><a href="https://www.zahnarztpraxis-alsterdorf.de/">Zahnarzt</a></li>
+               <li role="presentation"><a href="http://www.nonke-petersen.de/">Physiotherapie</a></li>
+             </ul>
+           </div>
+           <div class="col-xs-4 col-sm-3">
+             <h4>Links</h4>
+             <ul class="list-unstyled">
+               <li role="presentation"><a href="http://www.applied-kinesiology.org/">Applied Kinesiology</a></li>
+               <li role="presentation"><a href="http://www.cmd-dachverband.de/">CMD</a></li>
+               <li role="presentation"><a href="http://www.dpg-institut-hamburg.de/">Psychoanalyse</a></li>
+             </ul>
+           </div>
+           <div class="col-xs-4 col-sm-6 fbg-law">
+             <ul class="list-unstyled pull-right">
+               <li role="presentation"><a href="#">Impressun</a></li>
+               <li role="presentation"><a href="#">Kontakt</a></li>
+               <li role="presentation"><a href="#">Sonstiges</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script> -->
+    <script src="src/js/vendor/bootstrap.min.js"></script>
+    <script src="src/js/vendor/angular.min.js"></script>
+    <script src="src/js/vendor/angular-route.js"></script>
+    <script src="src/js/vendor/angular-animate.js"></script>
+
+    <script src="src/js/app.js"></script>
+    <!-- muss noch überarbeitet werden -->
+    <script src="src/js/controllers/head-controller.js"></script>
+    <script src="src/js/controllers/spiel-controller.js"></script>
+    <!-- schon fertig -->
+
+    <!-- <script src="src/js/controllers/spielTypCtrl.js"></script> -->
+    <script src="src/js/controllers/spieleCtrl.js"></script>
+    <!-- <script src="src/js/directives/spielTypDirective.js"></script> -->
+    <script src="src/js/directives/spieleDirectives.js"></script>
+
+    <!-- <script src="src/js/controllers/spielTypCtrl.js"></script> -->
+    <!-- <script src="src/js/directives/spielTypDirective.js"></script> -->
+    <!-- <script src="src/js/controllers/spielSymbolCtrl.js"></script> -->
+    <!-- <script src="src/js/directives/spielSymbolDirective.js"></script> -->
+
+    <!-- muss noch überarbeitet werden -->
+    <script src="src/js/directives/themen-directive.js"></script>
+    <script src="src/js/directives/anmelden-directive.js"></script>
+  </body>
+</html>

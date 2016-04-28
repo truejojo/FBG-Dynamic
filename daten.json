@@ -1,0 +1,47 @@
+{
+  "body": {
+    "header": {
+        "title": "Family Brain Games"
+    },
+    "main": {
+      "thema": [
+        "Spiel",
+        "Alphabet",
+        "Einmal Eins"
+      ],
+      "spieltyp": [
+        "KZMF",
+        "Spiel 1",
+        "Spiel 2"
+       ],
+       "startbutton": "spiele Spiel: ",
+       "section": {
+         "thema": {
+          "title": "Zu den Themen:",
+          "themen": [
+              "Spiele",
+              "Alphabet",
+              "Einmal Eins"
+            ]
+          },
+          "info": {
+           "title": "Hier weitere Infos:",
+           "infos": [
+            {
+              "header": "Zu den Spielen",
+              "paragraph": "lorem ipsum 1..."
+            },
+            {
+              "header": "Zum Alphabet",
+              "paragraph": "lorem ipsum 2..."
+            },
+            {
+              "header": "Einmal Eins",
+              "paragraph": "lorem ipsum 3..."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

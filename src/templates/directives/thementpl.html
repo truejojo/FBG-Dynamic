@@ -1,0 +1,22 @@
+<section class="row">
+  <div ng-controller="SpielthemaController">
+
+    <div class="list-group  col-xs-4">
+      <h3>{{themaTitel}}</h3>
+        <ul class="">
+          <li ng-class="{ active:isSelected($index + 1)}" ng-repeat="thema in themen">
+            <a href="#/src/templates/pages/info" ng-click="selectTab($index + 1)">{{thema}}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-xs-8">
+        <h2>{{infoTitel}}</h2>
+        <article class="panel" ng-show="isSelected($index + 1)" ng-repeat="info in infos">
+          <h3>{{info.header}}</h3>
+          <p>{{info.paragraph}}</p>
+        </article>
+      </div>
+
+    </div>
+</section>
